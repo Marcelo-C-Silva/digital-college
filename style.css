@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.card {
+  border: none;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #ccc;
+}
