@@ -1,268 +1,337 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja Virtual</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets /css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" href="/assets /css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet">
+  </head>
 
-<body>
+  <body>
 
-  <!-- Cabeçalho -->
-  <header class="bg-light border-bottom py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="h3"><img src="/assets /img/logo-header (1).svg" alt=""></h1>
-      <input type="search" class="form-control w-50 p-3" placeholder="Pesquisar produto..."><img src="Search.svg" alt=""> 
-      <div>
-        <a href="#" class="text-dark me-3">Cadastre-se</a>
-        <a href="#" class="btn btn-primary">Entrar</a>
-        <a href="#" class="text-dark position-relative">
-          <i class=""><img src="/assets /img/mini-cart.svg" alt=""></i>
-          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
-        </a>
+    <!-- Cabeçalho -->
+    <header class=" border-bottom py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="h3"><img src="/assets /img/logo-header (1).svg" alt></h1>
+        <input type="search" class="form-control w-50 p-3"
+          placeholder="Pesquisar produto..."><img src="Search.svg" alt>
+        <div>
+          <a href="#" class="text-dark me-3">Cadastre-se</a>
+          <a href="#" class="btn btn-primary">Entrar</a>
+          <a href="#" class="text-dark position-relative">
+            <i class><img src="/assets /img/mini-cart.svg" alt></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="container d-flex justify-content-between align-items-center mt-5">
+        <div>
+          <a href="#" class="text-dark me-3">Cadastre-se</a>
+          <a href="#" class="text-dark me-3">Produtos</a>
+          <a href="#" class="text-dark me-3">Categorias</a>
+          <a href="#" class="text-dark me-3">Meus Pedidos</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner Promocional -->
+    <div id="carouselExample" class="carousel slide bg-light" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex align-items-center justify-content-center text-start container flex-column flex-md-row">
+            <section class="order-2 order-md-1 py-5 flex-fill">
+              <div>
+                <h6>Melhores ofertas personalizadas</h6>
+                <h1 class="fw-bolder text-break">Queima de estoque Nike <span class="text-danger">🔥</span></h1>
+                <p class="text-break lh-base">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+                <a href="#" class="btn btn-danger">Ver Ofertas</a>
+              </div>
+            </section>
+            <section class="order-1 order-md-2 flex-fill">
+              <img src="/assets /img/White-Sneakers-PNG-Clipart 1.svg" alt="Tênis Nike" class="img-fluid">
+            </section>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex align-items-center justify-content-center text-start text-md-center container flex-column flex-md-row">
+            <section class="order-2 order-md-1 py-5 flex-fill">
+              <div>
+                <h6>Melhores ofertas personalizadas</h6>
+                <h1 class="fw-bolder text-break">Queima de estoque Nike <span class="text-danger">🔥</span></h1>
+                <p class="text-break lh-base">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+                <a href="#" class="btn btn-danger">Ver Ofertas</a>
+              </div>
+            </section>
+            <section class="order-1 order-md-2 flex-fill">
+              <img src="/assets /img/White-Sneakers-PNG-Clipart 1.svg" alt="Tênis Nike" class="img-fluid">
+            </section>
+          </div>
+        </div>
+        <!-- Adicione mais slides se desejar -->
+        <!-- <div class="carousel-item">...</div> -->
       </div>
     </div>
-    <div class="container d-flex justify-content-between align-items-center mt-5">
-      <div>
-        <a href="#" class="text-dark me-3">Cadastre-se</a>
-        <a href="#" class="text-dark me-3">Produtos</a>
-        <a href="#" class="text-dark me-3">Categorias</a>
-        <a href="#" class="text-dark me-3">Meus Pedidos</a>
-      </div>
+    
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </header>
 
-  <!-- Banner Promocional -->
-  <section class="bg-light text-center py-5">
-    <div class="container">
-      <h2>Queima de estoque Nike <span class="text-danger">🔥</span></h2>
-      <p>Consectetur culpa exercitation mollit nisi exceptetur do tempor laboris eiusmod.</p>
-      <a href="#" class="btn btn-danger">Ver Ofertas</a>
-    </div>
-  </section>
-
-  <!-- Coleções em Destaque -->
-  <section class="py-5">
-    <div class="container">
-      <h3 class="mb-4">Coleções em Destaque</h3>
-      <div class="row g-3">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="/assets /img/collection-1.png" class="card-img-top" alt="Novo drop Supreme">
-            <div class="card-body text-center">
-              <span class="badge bg-success">30% OFF</span>
-              <h5 class="card-title mt-2">Novo drop Supreme</h5>
-              <a href="#" class="btn btn-outline-primary mt-2">Comprar</a>
+    <!-- Coleções em Destaque -->
+    <section class="py-5">
+      <div class="container">
+        <h3 class="mb-4">Coleções em Destaque</h3>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets /img/collection-1.png" class="card-img-top"
+                alt="Novo drop Supreme">
+              <div class="card-body text-center">
+                <span class="badge bg-success">30% OFF</span>
+                <h5 class="card-title mt-2">Novo drop Supreme</h5>
+                <a href="#" class="btn btn-outline-primary mt-2">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets /img/collection-1.png" class="card-img-top"
+                alt="Novo drop Supreme">
+              <div class="card-body text-center">
+                <span class="badge bg-success">30% OFF</span>
+                <h5 class="card-title mt-2">Novo drop Supreme</h5>
+                <a href="#" class="btn btn-outline-primary mt-2">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/assets /img/collection-1.png" class="card-img-top"
+                alt="Novo drop Supreme">
+              <div class="card-body text-center">
+                <span class="badge bg-success">30% OFF</span>
+                <h5 class="card-title mt-2">Novo drop Supreme</h5>
+                <a href="#" class="btn btn-outline-primary mt-2">Comprar</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="/assets /img/collection-1.png" class="card-img-top" alt="Novo drop Supreme">
-            <div class="card-body text-center">
-              <span class="badge bg-success">30% OFF</span>
-              <h5 class="card-title mt-2">Novo drop Supreme</h5>
-              <a href="#" class="btn btn-outline-primary mt-2">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="/assets /img/collection-1.png" class="card-img-top" alt="Novo drop Supreme">
-            <div class="card-body text-center">
-              <span class="badge bg-success">30% OFF</span>
-              <h5 class="card-title mt-2">Novo drop Supreme</h5>
-              <a href="#" class="btn btn-outline-primary mt-2">Comprar</a>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <section class="py-5">
-    <div class="container">
+    </section>
+    <section class="py-5">
+      <div class="container">
         <h3 class="mb-4 text-center">Coleções em Destaque</h3>
         <div class="row g-3 justify-content-center">
-            <div class="col-6 col-md-2">
-                <div class="card">
-                    <img src="/assets /img/image.png" class="card-img-top" alt="Novo drop Supreme">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mt-2">Camisetas</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-2">
-                <div class="card">
-                    <img src="/assets /img/image.png" class="card-img-top" alt="Novo drop Supreme">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mt-2">Camisetas</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-2">
-                <div class="card">
-                    <img src="/assets /img/image.png" class="card-img-top" alt="Novo drop Supreme">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mt-2">Camisetas</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-2">
-                <div class="card">
-                    <img src="/assets /img/image.png" class="card-img-top" alt="Novo drop Supreme">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mt-2">Camisetas</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-2">
-                <div class="card">
-                    <img src="/assets /img/image.png" class="card-img-top" alt="Novo drop Supreme">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mt-2">Camisetas</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-  <!-- Produtos em Alta -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <h3 class="mb-4">Produtos em Alta</h3>
-      <div class="row row-cols-2 row-cols-md-5 g-3">
-        <div class="col">
-          <div class="card">
-            <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="K-Swiss V8">
-            <div class="card-body text-center">
-              <h6 class="text-muted">Tênis</h6>
-              <h5 class="card-title">K-Swiss V8 - Masculino</h5>
-              <p><del>$200</del> <span class="text-danger">$100</span></p>
+          <div class="col-6 col-md-2">
+            <div class="card">
+              <img src="/assets /img/image.png" class="card-img-top"
+                alt="Novo drop Supreme">
+              <div class="card-body text-center">
+                <h5 class="card-title mt-2">Camisetas</h5>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 2">
-            <div class="card-body text-center">
-              <h6 class="text-muted">Tênis</h6>
-              <h5 class="card-title">Produto 2</h5>
-              <p><del>$150</del> <span class="text-danger">$75</span></p>
+          <div class="col-6 col-md-2">
+            <div class="card">
+              <img src="/assets /img/image.png" class="card-img-top"
+                alt="Novo drop Supreme">
+              <div class="card-body text-center">
+                <h5 class="card-title mt-2">Camisetas</h5>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 3">
-            <div class="card-body text-center">
-              <h6 class="text-muted">Tênis</h6>
-              <h5 class="card-title">Produto 3</h5>
-              <p><del>$180</del> <span class="text-danger">$90</span></p>
+          <div class="col-6 col-md-2">
+            <div class="card">
+              <img src="/assets /img/image.png" class="card-img-top"
+                alt="Novo drop Supreme">
+              <div class="card-body text-center">
+                <h5 class="card-title mt-2">Camisetas</h5>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 4">
-            <div class="card-body text-center">
-              <h6 class="text-muted">Tênis</h6>
-              <h5 class="card-title">Produto 4</h5>
-              <p><del>$220</del> <span class="text-danger">$110</span></p>
+          <div class="col-6 col-md-2">
+            <div class="card">
+              <img src="/assets /img/image.png" class="card-img-top"
+                alt="Novo drop Supreme">
+              <div class="card-body text-center">
+                <h5 class="card-title mt-2">Camisetas</h5>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 5">
-            <div class="card-body text-center">
-              <h6 class="text-muted">Tênis</h6>
-              <h5 class="card-title">Produto 5</h5>
-              <p><del>$210</del> <span class="text-danger">$105</span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 6">
-            <div class="card-body text-center">
-              <h6 class="text-muted">Tênis</h6>
-              <h5 class="card-title">Produto 6</h5>
-              <p><del>$200</del> <span class="text-danger">$100</span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 7">
-            <div class="card-body text-center">
-              <h6 class="text-muted">Tênis</h6>
-              <h5 class="card-title">Produto 7</h5>
-              <p><del>$150</del> <span class="text-danger">$75</span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 8">
-            <div class="card-body text-center">
-              <h6 class="text-muted">Tênis</h6>
-              <h5 class="card-title">Produto 8</h5>
-              <p><del>$180</del> <span class="text-danger">$90</span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 9">
-            <div class="card-body text-center">
-              <h6 class="text-muted">Tênis</h6>
-              <h5 class="card-title">Produto 9</h5>
-              <p><del>$220</del> <span class="text-danger">$110</span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 10">
-            <div class="card-body text-center">
-              <h6 class="text-muted">Tênis</h6>
-              <h5 class="card-title">Produto 10</h5>
-              <p><del>$210</del> <span class="text-danger">$105</span></p>
+          <div class="col-6 col-md-2">
+            <div class="card">
+              <img src="/assets /img/image.png" class="card-img-top"
+                alt="Novo drop Supreme">
+              <div class="card-body text-center">
+                <h5 class="card-title mt-2">Camisetas</h5>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="bg-light text-center py-5">
-    <div class="container">
-      <h2>Queima de estoque Nike <span class="text-danger">🔥</span></h2>
-      <p>Consectetur culpa exercitation mollit nisi exceptetur do tempor laboris eiusmod.</p>
-      <a href="#" class="btn btn-danger">Ver Ofertas</a>
-    </div>
-  </section>
-  <!-- Rodapé -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h5><img src="logo-footer.svg" alt=""></h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="d-flex gap-3">
-            <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+    </section>
+    <!-- Produtos em Alta -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h3 class="mb-4">Produtos em Alta</h3>
+        <div class="row row-cols-2 row-cols-md-5 g-3">
+          <div class="col">
+            <div class="card">
+              <img src="/assets /img/product-thumb-5 (1).jpeg"
+                class="card-img-top" alt="K-Swiss V8">
+              <div class="card-body text-center">
+                <h6 class="text-muted">Tênis</h6>
+                <h5 class="card-title">K-Swiss V8 - Masculino</h5>
+                <p><del>$200</del> <span class="text-danger">$100</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/assets /img/product-thumb-5 (1).jpeg"
+                class="card-img-top" alt="Produto 2">
+              <div class="card-body text-center">
+                <h6 class="text-muted">Tênis</h6>
+                <h5 class="card-title">Produto 2</h5>
+                <p><del>$150</del> <span class="text-danger">$75</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/assets /img/product-thumb-5 (1).jpeg"
+                class="card-img-top" alt="Produto 3">
+              <div class="card-body text-center">
+                <h6 class="text-muted">Tênis</h6>
+                <h5 class="card-title">Produto 3</h5>
+                <p><del>$180</del> <span class="text-danger">$90</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/assets /img/product-thumb-5 (1).jpeg"
+                class="card-img-top" alt="Produto 4">
+              <div class="card-body text-center">
+                <h6 class="text-muted">Tênis</h6>
+                <h5 class="card-title">Produto 4</h5>
+                <p><del>$220</del> <span class="text-danger">$110</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/assets /img/product-thumb-5 (1).jpeg"
+                class="card-img-top" alt="Produto 5">
+              <div class="card-body text-center">
+                <h6 class="text-muted">Tênis</h6>
+                <h5 class="card-title">Produto 5</h5>
+                <p><del>$210</del> <span class="text-danger">$105</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/assets /img/product-thumb-5 (1).jpeg"
+                class="card-img-top" alt="Produto 6">
+              <div class="card-body text-center">
+                <h6 class="text-muted">Tênis</h6>
+                <h5 class="card-title">Produto 6</h5>
+                <p><del>$200</del> <span class="text-danger">$100</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/assets /img/product-thumb-5 (1).jpeg"
+                class="card-img-top" alt="Produto 7">
+              <div class="card-body text-center">
+                <h6 class="text-muted">Tênis</h6>
+                <h5 class="card-title">Produto 7</h5>
+                <p><del>$150</del> <span class="text-danger">$75</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/assets /img/product-thumb-5 (1).jpeg"
+                class="card-img-top" alt="Produto 8">
+              <div class="card-body text-center">
+                <h6 class="text-muted">Tênis</h6>
+                <h5 class="card-title">Produto 8</h5>
+                <p><del>$180</del> <span class="text-danger">$90</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/assets /img/product-thumb-5 (1).jpeg"
+                class="card-img-top" alt="Produto 9">
+              <div class="card-body text-center">
+                <h6 class="text-muted">Tênis</h6>
+                <h5 class="card-title">Produto 9</h5>
+                <p><del>$220</del> <span class="text-danger">$110</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/assets /img/product-thumb-5 (1).jpeg"
+                class="card-img-top" alt="Produto 10">
+              <div class="card-body text-center">
+                <h6 class="text-muted">Tênis</h6>
+                <h5 class="card-title">Produto 10</h5>
+                <p><del>$210</del> <span class="text-danger">$105</span></p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Outras colunas do rodapé, como links e contato -->
       </div>
-    </div>
-  </footer>
+    </section>
+    <section class="bg-light text-center py-5">
+      <div class="container">
+        <h2>Queima de estoque Nike <span class="text-danger">🔥</span></h2>
+        <p>Consectetur culpa exercitation mollit nisi exceptetur do tempor
+          laboris eiusmod.</p>
+        <a href="#" class="btn btn-danger">Ver Ofertas</a>
+      </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5><img src="/assets /img/logo-footer.svg" alt></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+          <!-- Outras colunas do rodapé, como links e contato -->
+        </div>
+      </div>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 
 </html>
