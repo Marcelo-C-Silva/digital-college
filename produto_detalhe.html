@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Store - Product Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* General styles */
+    body {
+      background-color: #f8f9fa;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #d63384;
+    }
+    /* Product Details */
+    .product-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .price {
+      font-size: 1.5rem;
+      color: #d63384;
+    }
+    .old-price {
+      color: #999;
+      text-decoration: line-through;
+    }
+    .product-description {
+      color: #666;
+    }
+    .color-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .btn-buy {
+      background-color: #ffcc00;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    /* Related Products */
+    .related-product-card {
+      border: 1px solid #e0e0e0;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .related-product-card img {
+      max-width: 100%;
+      height: auto;
+    }
+    .footer {
+      background-color: #212529;
+      color: #ffffff;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <header class="bg-light border-bottom py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3"><img src="/assets /img/logo-header (1).svg" alt></h1>
+      <input type="search" class="form-control w-50 p-3"
+        placeholder="Pesquisar produto..."><img src="Search.svg" alt>
+      <div>
+        <a href="#" class="text-dark me-3">Cadastre-se</a>
+        <a href="#" class="btn btn-primary">Entrar</a>
+        <a href="#" class="text-dark position-relative">
+          <i class><img src="/assets /img/mini-cart.svg" alt></i>
+          <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
+        </a>
+      </div>
+    </div>
+    <div
+      class="container d-flex justify-content-between align-items-center mt-5">
+      <div>
+        <a href="#" class="text-dark me-3">Cadastre-se</a>
+        <a href="#" class="text-dark me-3">Produtos</a>
+        <a href="#" class="text-dark me-3">Categorias</a>
+        <a href="#" class="text-dark me-3">Meus Pedidos</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb Section -->
+  <section class="container mt-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Produtos</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Ténis Nike Revolution 6 Next Nature Masculino</li>
+      </ol>
+    </nav>
+  </section>
+
+  <!-- Product Details Section -->
+  <section class="container my-4">
+    <div class="row">
+      <!-- Product Images -->
+      <div class="col-md-6">
+        <img src="/assets /img/imagesliddetalhe.png" alt="Ténis Nike" class="img-fluid rounded mb-3">
+        <div class="d-flex justify-content-between">
+          <img src="/assets /img/imagesliddetalhe.png" alt="Thumbnail 1" class="img-thumbnail" style="width: 18%;">
+          <img src="/assets /img/imagesliddetalhe.png" alt="Thumbnail 2" class="img-thumbnail" style="width: 18%;">
+          <img src="/assets /img/imagesliddetalhe.png" alt="Thumbnail 3" class="img-thumbnail" style="width: 18%;">
+          <img src="/assets /img/imagesliddetalhe.png" alt="Thumbnail 4" class="img-thumbnail" style="width: 18%;">
+          <img src="/assets /img/imagesliddetalhe.png" alt="Thumbnail 5" class="img-thumbnail" style="width: 18%;">
+        </div>
+      </div>
+
+      <!-- Product Information -->
+      <div class="col-md-6">
+        <h2 class="product-title">Ténis Nike Revolution 6 Next Nature Masculino</h2>
+        <p class="text-muted">Casual | Nike | REF:38416711</p>
+        <div class="d-flex align-items-center mb-2">
+          <span class="badge bg-warning text-dark">4.7</span>
+          <span class="ms-2 text-muted">(90 avaliações)</span>
+        </div>
+        <p class="price">R$ 219,00 <span class="old-price">210,00</span></p>
+        <p class="product-description">Descrição do produto Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="mb-3">
+          <h6>Tamanho</h6>
+          <button class="btn btn-outline-secondary me-1">39</button>
+          <button class="btn btn-outline-secondary me-1">40</button>
+          <button class="btn btn-outline-secondary active">41</button>
+          <button class="btn btn-outline-secondary me-1">42</button>
+          <button class="btn btn-outline-secondary">43</button>
+        </div>
+        <div class="mb-3">
+          <h6>Cor</h6>
+          <span class="color-circle" style="background-color: #ff5555;"></span>
+          <span class="color-circle" style="background-color: #55ff55;"></span>
+          <span class="color-circle" style="background-color: #5555ff;"></span>
+        </div>
+        <button class="btn btn-buy btn-lg w-100">COMPRAR</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products Section -->
+  <section class="container my-5">
+    <h4>Produtos Relacionados</h4>
+    <div>
+      <div class="row row-cols-2 row-cols-md-4 g-3">
+        <div class="col">
+          <div class="card">
+            <img src="/assets /img/product-thumb-5 (1).jpeg"
+              class="card-img-top" alt="K-Swiss V8">
+            <div class="card-body text-center">
+              <h6 class="text-muted">Tênis</h6>
+              <h5 class="card-title">produto 1</h5>
+              <p><del>$200</del> <span
+                  class="text-danger">$100</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/assets /img/product-thumb-5 (1).jpeg"
+              class="card-img-top" alt="Produto 2">
+            <div class="card-body text-center">
+              <h6 class="text-muted">Tênis</h6>
+              <h5 class="card-title">Produto 2</h5>
+              <p><del>$150</del> <span
+                  class="text-danger">$75</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/assets /img/product-thumb-5 (1).jpeg"
+              class="card-img-top" alt="Produto 2">
+            <div class="card-body text-center">
+              <h6 class="text-muted">Tênis</h6>
+              <h5 class="card-title">Produto 2</h5>
+              <p><del>$150</del> <span
+                  class="text-danger">$75</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/assets /img/product-thumb-5 (1).jpeg"
+              class="card-img-top" alt="Produto 2">
+            <div class="card-body text-center">
+              <h6 class="text-muted">Tênis</h6>
+              <h5 class="card-title">Produto 2</h5>
+              <p><del>$150</del> <span
+                  class="text-danger">$75</span></p>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5><img src="logo-footer.svg" alt=""></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <!-- Outras colunas do rodapé, como links e contato -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
