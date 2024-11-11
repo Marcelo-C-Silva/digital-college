@@ -1,197 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Store</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+  </head>
+  <body>
 
-  <!-- Navbar -->
-  <header class="bg-light border-bottom py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="h3"><img src="/assets /img/logo-header (1).svg" alt=""></h1>
-      <input type="search" class="form-control w-50 p-3" placeholder="Pesquisar produto..."><img src="Search.svg" alt=""> 
-      <div>
-        <a href="#" class="text-dark me-3">Cadastre-se</a>
-        <a href="#" class="btn btn-primary">Entrar</a>
-        <a href="#" class="text-dark position-relative">
-          <i class=""><img src="/assets /img/mini-cart.svg" alt=""></i>
-          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
-        </a>
+    <!-- Navbar -->
+    <header class="bg-light border-bottom py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="h3"><img src="/assets /img/logo-header (1).svg" alt></h1>
+        <input type="search" class="form-control w-50 p-3"
+          placeholder="Pesquisar produto..."><img src="Search.svg" alt>
+        <div>
+          <a href="#" class="text-dark me-3">Cadastre-se</a>
+          <a href="#" class="btn btn-primary">Entrar</a>
+          <a href="#" class="text-dark position-relative">
+            <i class><img src="/assets /img/mini-cart.svg" alt></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="container d-flex justify-content-between align-items-center mt-5">
-      <div>
-        <a href="#" class="text-dark me-3">Cadastre-se</a>
-        <a href="#" class="text-dark me-3">Produtos</a>
-        <a href="#" class="text-dark me-3">Categorias</a>
-        <a href="#" class="text-dark me-3">Meus Pedidos</a>
+      <div
+        class="container d-flex justify-content-between align-items-center mt-5">
+        <div>
+          <a href="#" class="text-dark me-3">Cadastre-se</a>
+          <a href="#" class="text-dark me-3">Produtos</a>
+          <a href="#" class="text-dark me-3">Categorias</a>
+          <a href="#" class="text-dark me-3">Meus Pedidos</a>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Content -->
-  <main class="container my-5">
-    <section>
-      <div class="d-flex justify-content-between mb-3">
-        <h5>Resultados para “Ténis” - 369 produtos</h5>
-      </div>
-      <div class="row">
-        <!-- Sidebar Filters -->
-        <aside class="col-lg-3">
-          <div class="sidebar">
-            <h5>Filtrar por</h5>
-            <h6 class="mt-4">Marca</h6>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="adidas">
-              <label class="form-check-label" for="adidas">Adidas</label>
+    <!-- Content -->
+    <main class="container my-5">
+      <section>
+        <div class="d-flex justify-content-between mb-3">
+          <h5>Resultados para “Ténis” - 369 produtos</h5>
+            <select class="form-select w-auto">
+              <option>Ordenar por: mais relevantes</option>
+            </select>
+        </div>
+        
+        <div class="row">
+          <!-- Sidebar Filters -->
+          <aside class="col-lg-3">
+            <div class="sidebar">
+              <h5>Filtrar por</h5>
+              <h6 class="mt-4">Marca</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                  id="adidas">
+                <label class="form-check-label" for="adidas">Adidas</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                  id="calci">
+                <label class="form-check-label" for="calci">Calciéncaga</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value
+                  id="kswiss" checked>
+                <label class="form-check-label" for="kswiss">K-Swiss</label>
+              </div>
+              <!-- Add more filter options as needed -->
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="calci">
-              <label class="form-check-label" for="calci">Calciéncaga</label>
+          </aside>
+
+          <!-- Products Section -->
+          <section class="col-lg-9">
+            <div class="container">
+              <div class="row row-cols-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card">
+                    <img src="/assets /img/product-thumb-5 (1).jpeg"
+                      class="card-img-top" alt="K-Swiss V8">
+                    <div class="card-body text-center">
+                      <h6 class="text-muted">Tênis</h6>
+                      <h5 class="card-title">produto 1</h5>
+                      <p><del>$200</del> <span
+                          class="text-danger">$100</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/assets /img/product-thumb-5 (1).jpeg"
+                      class="card-img-top" alt="Produto 2">
+                    <div class="card-body text-center">
+                      <h6 class="text-muted">Tênis</h6>
+                      <h5 class="card-title">Produto 2</h5>
+                      <p><del>$150</del> <span
+                          class="text-danger">$75</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/assets /img/product-thumb-5 (1).jpeg"
+                      class="card-img-top" alt="Produto 3">
+                    <div class="card-body text-center">
+                      <h6 class="text-muted">Tênis</h6>
+                      <h5 class="card-title">Produto 3</h5>
+                      <p><del>$180</del> <span
+                          class="text-danger">$90</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/assets /img/product-thumb-5 (1).jpeg"
+                      class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                      <h6 class="text-muted">Tênis</h6>
+                      <h5 class="card-title">Produto 4</h5>
+                      <p><del>$220</del> <span
+                          class="text-danger">$110</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/assets /img/product-thumb-5 (1).jpeg"
+                      class="card-img-top" alt="Produto 5">
+                    <div class="card-body text-center">
+                      <h6 class="text-muted">Tênis</h6>
+                      <h5 class="card-title">Produto 5</h5>
+                      <p><del>$210</del> <span
+                          class="text-danger">$105</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/assets /img/product-thumb-5 (1).jpeg"
+                      class="card-img-top" alt="Produto 6">
+                    <div class="card-body text-center">
+                      <h6 class="text-muted">Tênis</h6>
+                      <h5 class="card-title">Produto 6</h5>
+                      <p><del>$200</del> <span
+                          class="text-danger">$100</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/assets /img/product-thumb-5 (1).jpeg"
+                      class="card-img-top" alt="Produto 7">
+                    <div class="card-body text-center">
+                      <h6 class="text-muted">Tênis</h6>
+                      <h5 class="card-title">Produto 7</h5>
+                      <p><del>$150</del> <span
+                          class="text-danger">$75</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/assets /img/product-thumb-5 (1).jpeg"
+                      class="card-img-top" alt="Produto 8">
+                    <div class="card-body text-center">
+                      <h6 class="text-muted">Tênis</h6>
+                      <h5 class="card-title">Produto 8</h5>
+                      <p><del>$180</del> <span
+                          class="text-danger">$90</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/assets /img/product-thumb-5 (1).jpeg"
+                      class="card-img-top" alt="Produto 9">
+                    <div class="card-body text-center">
+                      <h6 class="text-muted">Tênis</h6>
+                      <h5 class="card-title">Produto 9</h5>
+                      <p><del>$220</del> <span
+                          class="text-danger">$110</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/assets /img/product-thumb-5 (1).jpeg"
+                      class="card-img-top" alt="Produto 10">
+                    <div class="card-body text-center">
+                      <h6 class="text-muted">Tênis</h6>
+                      <h5 class="card-title">Produto 10</h5>
+                      <p><del>$210</del> <span
+                          class="text-danger">$105</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="kswiss" checked>
-              <label class="form-check-label" for="kswiss">K-Swiss</label>
+          </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-light py-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <h5><img src="logo-footer.svg" alt></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="d-flex gap-3">
+                  <a href="#" class="text-light"><i
+                      class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-light"><i
+                      class="bi bi-instagram"></i></a>
+                  <a href="#" class="text-light"><i
+                      class="bi bi-twitter"></i></a>
+                </div>
+              </div>
+              <!-- Outras colunas do rodapé, como links e contato -->
             </div>
-            <!-- Add more filter options as needed -->
           </div>
-        </aside>
+        </footer>
 
-        <!-- Products Section -->
-  <section class="col-lg-9">
-  <div class="d-flex justify-content-end mb-3">
-    <select class="form-select w-auto">
-      <option>Ordenar por: mais relevantes</option>
-    </select>
-  </div>
-  <div class="container">
-    <div class="row row-cols-2 row-cols-md-3 g-3">
-      <div class="col">
-        <div class="card">
-          <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="K-Swiss V8">
-          <div class="card-body text-center">
-            <h6 class="text-muted">Tênis</h6>
-            <h5 class="card-title">produto 1</h5>
-            <p><del>$200</del> <span class="text-danger">$100</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 2">
-          <div class="card-body text-center">
-            <h6 class="text-muted">Tênis</h6>
-            <h5 class="card-title">Produto 2</h5>
-            <p><del>$150</del> <span class="text-danger">$75</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 3">
-          <div class="card-body text-center">
-            <h6 class="text-muted">Tênis</h6>
-            <h5 class="card-title">Produto 3</h5>
-            <p><del>$180</del> <span class="text-danger">$90</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 4">
-          <div class="card-body text-center">
-            <h6 class="text-muted">Tênis</h6>
-            <h5 class="card-title">Produto 4</h5>
-            <p><del>$220</del> <span class="text-danger">$110</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 5">
-          <div class="card-body text-center">
-            <h6 class="text-muted">Tênis</h6>
-            <h5 class="card-title">Produto 5</h5>
-            <p><del>$210</del> <span class="text-danger">$105</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 6">
-          <div class="card-body text-center">
-            <h6 class="text-muted">Tênis</h6>
-            <h5 class="card-title">Produto 6</h5>
-            <p><del>$200</del> <span class="text-danger">$100</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 7">
-          <div class="card-body text-center">
-            <h6 class="text-muted">Tênis</h6>
-            <h5 class="card-title">Produto 7</h5>
-            <p><del>$150</del> <span class="text-danger">$75</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 8">
-          <div class="card-body text-center">
-            <h6 class="text-muted">Tênis</h6>
-            <h5 class="card-title">Produto 8</h5>
-            <p><del>$180</del> <span class="text-danger">$90</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 9">
-          <div class="card-body text-center">
-            <h6 class="text-muted">Tênis</h6>
-            <h5 class="card-title">Produto 9</h5>
-            <p><del>$220</del> <span class="text-danger">$110</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets /img/product-thumb-5 (1).jpeg" class="card-img-top" alt="Produto 10">
-          <div class="card-body text-center">
-            <h6 class="text-muted">Tênis</h6>
-            <h5 class="card-title">Produto 10</h5>
-            <p><del>$210</del> <span class="text-danger">$105</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h5><img src="logo-footer.svg" alt=""></h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="d-flex gap-3">
-            <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
-          </div>
-        </div>
-        <!-- Outras colunas do rodapé, como links e contato -->
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      </body>
+    </html>
